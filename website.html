@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/dumbbell-1966247_1920.jpg');
+    }
+
+    .left {
+        position: absolute;
+        left: 80px;
+        top: 0px;
+        /* border: 2px solid red; */
+        display: inline-block;
+        line-height: 0px;
+        font-size: 21px;
+
+    }
+
+    .left img {
+        width: 120px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 22px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 25px;
+    }
+
+    .navbar li a:hover,.navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 10px;
+        background-color: black;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 25px;
+        margin: 175px 75px;
+        padding: 20px 40px;
+        width: 33%;
+    }
+
+    .form input {
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align: center;
+        display: block;
+        width: 230px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 13px auto;
+        font-size: 20px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+        width: 260px;
+    }
+
+    .cont2 {
+        font-family: "Fredoka", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        position: absolute;
+        top: 145px;
+        right: 90px;
+        margin: 115px auto;
+        padding: 32px 90px;
+        /* border: 2px solid rgb(70, 68, 71); */
+        /* border-radius: 25px; */
+        width: 30%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>
+                Warrior Gym
+            </div>
+        </div>
+
+        <!-- for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN WARRIOR GYM NOW</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+    <div class="cont2">
+        <h2>ABOUT GYM ENVIRONMENT</h2>
+        <br>
+        <p>Welcome to the gym, a space where strength meets community and transformation happens daily! Whether you're a
+            seasoned athlete or just starting your fitness journey, the gym is your playground for building not only
+            physical strength but also mental resilience. Here, you can challenge yourself, try new workouts, and
+            discover what your body is capable of. With a variety of equipment, classes, and supportive trainers, the
+            gym offers a dynamic environment to help you achieve your goals. So, lace up those sneakers, grab your water
+            bottle, and get ready to unleash your potential!</p>
+    </div>
+</body>
+
+</html>
